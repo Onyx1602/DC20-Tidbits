@@ -1,0 +1,41 @@
+{
+  "id": "dc20-tidbits",
+  "title": "DC20 Tidbits",
+  "version": "1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "description": "<p>Ever got bored just watching a loading screen on foundry well look no further with this module. This Module adds DC20 \"Did you Know\" Tip to the loading screens on Foundry.</p>",
+  "authors": [
+    {
+      "name": "OnyxStudios",
+      "email": "Onyx1602yt@gmail.com",
+      "url": "https://patreon.com/OnyxStudios?",
+      "discord": "Onyx1602#8924",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dc20rpg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "styles": [
+    {
+      "src": "styles/tidbits-polish.css"
+    }
+  ],
+  "scripts": [
+    "lang/en.js",
+    "scripts/tidbits-main.js"
+  ]
+}

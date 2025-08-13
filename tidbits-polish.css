@@ -1,0 +1,48 @@
+#dc20-tidbits-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	pointer-events: none;
+	display: flex;
+	align-items: center; /* was: flex-end */
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 0.35s ease;
+}
+#dc20-tidbits-overlay.hide {
+	opacity: 0;
+}
+#dc20-tidbits-overlay .dc20-tidbits-bg {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	filter: blur(8px) brightness(0.75);
+	transform: scale(1.05);
+}
+#dc20-tidbits-overlay .dc20-tidbits-tip {
+	position: relative;
+	margin: 3rem; 
+	max-width: min(1650px, 95vw); 
+	background: #6513bf;
+	color: #fff;
+	padding: 2.25rem 2.625rem;     
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+	display: flex;
+	gap: 1.125rem; 
+	align-items: flex-start;
+}
+#dc20-tidbits-overlay .dc20-tidbits-tip i {
+	font-size: 2.625rem; 
+	margin-top: 0.15rem;  
+}
+#dc20-tidbits-overlay .dc20-tidbits-title {
+	font-weight: 700;
+	margin-bottom: 0.25rem;
+	font-size: 2.25rem; 
+}
+#dc20-tidbits-overlay .dc20-tidbits-body {
+	line-height: 1.3;
+	font-size: 1.65rem; 
+}
